@@ -10,13 +10,24 @@ PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
     
-
+    for _ in 1...18{
         for _ in 1...10 {
-            turtle.trapazoid(withSize: 50)
-            turtle.square(withSize: 45)
+            turtle.trapazoid(withSize: 30)
+            turtle.square(withSize: 25)
             turtle.right(36)
             for _ in 1...4 {
-                turtle.triangle(withSize: 40)
+                turtle.triangle(withSize: 20)
             }
+        }
+        turtle.right(20)
     }
+    
 }
+//for _ in 1...10 {
+//    turtle.trapazoid(withSize: 50)
+//    turtle.square(withSize: 45)
+//    turtle.right(36)
+//    for _ in 1...4 {
+//        turtle.triangle(withSize: 40)
+//    }
+//}
