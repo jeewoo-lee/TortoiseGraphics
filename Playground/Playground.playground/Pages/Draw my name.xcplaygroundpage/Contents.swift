@@ -9,22 +9,24 @@ canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { t in
-    t.penUp()
-    t.setX(-200)
-    t.penDown()
-    t.drawJ()
-    t.draw_e()
-    t.draw_e()
-    t.draw_w()
-    t.draw_o()
-    t.draw_o()
-    t.penUp()
-    t.setX(-200)
-    t.setY(-210)
-    t.penDown()
-    t.drawL()
-    t.draw_e()
-    t.draw_e()
+     t.mySigniture(scaleFactor: 0.5)
+    
+//    t.penUp()
+//    t.setX(-200)
+//    t.penDown()
+//    t.drawJ(scaleFactor: 0.5)
+//    t.draw_e(scaleFactor: 0.5)
+//    t.draw_e(scaleFactor: 0.5)
+//    t.draw_w(scaleFactor: 0.5)
+//    t.draw_o(scaleFactor: 0.5)
+//    t.draw_o(scaleFactor: 0.5)
+//    t.penUp()
+//    t.setX(-200)
+//    t.setY(-210)
+//    t.penDown()
+//    t.drawL(scaleFactor: 0.5)
+//    t.draw_e(scaleFactor: 0.5)
+//    t.draw_e(scaleFactor: 0.5)
 
     
     
