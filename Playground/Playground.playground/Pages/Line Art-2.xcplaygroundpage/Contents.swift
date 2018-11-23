@@ -8,8 +8,14 @@ canvas.frameRate = 30
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
-canvas.drawing { turtle in
+canvas.drawing { t in
     
-    turtle.drawMyStar(withSize: 50)
+    t.drawMyStar(withSize: 60)
+    for _ in 1...18 {
+        t.right(20)
+        t.curve(withSides: 10, withSize: 50, drawSides: 10)
+    }
+    
+    
     
 }
