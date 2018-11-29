@@ -11,11 +11,10 @@ PlaygroundPage.current.liveView = canvas
 canvas.drawing { t in
     
     t.drawMyStar(withSize: 60)
-    for _ in 1...18 {
-        t.right(20)
-        t.curve(withSides: 10, withSize: 50, drawSides: 10)
+    for _ in 1...3 {
+        t.hexagon(withSize: 50)
     }
-    
+
     
     
 }

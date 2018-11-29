@@ -34,12 +34,11 @@ public extension Tortoise {
     }
 
     func curve(withSides sideCount: Int, withSize size: Double, drawSides sideLimit: Int ) {
-        self.penDown()
+
         for _ in 1 ... sideLimit {
             self.forward(size)
             self.right(360 / Double(sideCount))
         }
-        self.penUp()
     }
     func drawJ(scaleFactor scale: Double = 1.0) {
         //Draw Upper Case J
@@ -156,6 +155,12 @@ public extension Tortoise {
                 }
             }
             self.right(20)
+        }
+    }
+    func hexagon (withSize size: Double) {
+        for _ in 1...6 {
+            self.right(20)
+            self.curve(withSides: 10, withSize: size, drawSides: 10)
         }
     }
 }
