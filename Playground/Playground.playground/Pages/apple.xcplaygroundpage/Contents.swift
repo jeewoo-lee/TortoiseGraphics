@@ -10,8 +10,11 @@ PlaygroundPage.current.liveView = canvas
 
 
 canvas.drawing { t in
+    t.hideTortoise()
+    
+    t.beginFill()
     t.penUp()
-    t.penSize(13)
+    t.penSize(10)
     t.goto(-20, -20)
     
     t.left(90)
@@ -40,19 +43,20 @@ canvas.drawing { t in
     t.curve(withSides: 70, withSize: 10, drawSides: 7)
     t.curve(withSides: 70, withSize: 12, drawSides: 5)
     t.curve(withSides: 200, withSize: 7, drawSides: 1)
-    t.curve(withSides: 200, withSize: 10, drawSides: 1)
+    t.curve(withSides: 180, withSize: 15, drawSides: 1)
     t.right(45)
     t.penUp()
+    t.endFill()
     //top
     t.forward(80)
     t.left(10)
     t.penDown()
+    t.beginFill()
     t.curve(withSides: -50, withSize: 8, drawSides: 11)
     t.setHeading(250)
     t.curve(withSides: -50, withSize: 8, drawSides: 11)
-    t.hideTortoise()
-
-
+    t.endFill()
+    
    // t.curve(withSides: 50, withSize: 8, drawSides: 3)
 
    
